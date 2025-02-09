@@ -7,3 +7,9 @@ export default function Logo(){
             <p className="text-4xl font-bold tracking-tight bg-clip-text bg-gradient-to-r from-amber-500 to-orange-500  leading-tight  text-transparent">BudgetTracker</p>
  </a> 
 }
+
+export function MobileLogo(){
+    return <a href="/" className="flex items-center gap-2"> 
+            <p className="text-4xl font-bold tracking-tight bg-clip-text bg-gradient-to-r from-amber-500 to-orange-500  leading-tight  text-transparent">BudgetTracker</p>
+ </a> 
+}
