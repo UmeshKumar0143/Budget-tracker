@@ -97,7 +97,7 @@ function Navlink({title, to ,onLinkClick}:{title:string, to:string, onLinkClick?
     const isActive = pathName === to; 
 
     return <div className="relative flex items-center">
-            <Link onClick={()=>{
+            <Link onClick={()=>{    
                 if(onLinkClick) onLinkClick(); 
             }} href={to} className={cn( buttonVariants({variant:"ghost"}), "w-full text-2xl  text-muted-foreground justify-start", isActive && "text-foreground")}>{title}</Link>
     { isActive && <div className="absolute bg-foreground -bottom-[2px] hidden md:block -translate-x-1/2 left-1/2 h-[2px] w-[80%] rounded-xl "></div>}
